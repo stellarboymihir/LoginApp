@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".SignInActivity">
+
+    <EditText
+        android:id="@+id/email_signin"
+        android:layout_width="311dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="440dp"
+        android:background="@drawable/edit_shape"
+        android:ems="10"
+        android:hint="Enter Email"
+        android:inputType="textEmailAddress"
+        android:paddingStart="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passsignin"
+        android:layout_width="311dp"
+        android:layout_height="41dp"
+        android:background="@drawable/edit_shape"
+        android:ems="10"
+        android:hint="Enter Password"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/signin_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_signin"
+        app:layout_constraintVertical_bias="0.533" />
+
+    <Button
+        android:id="@+id/signin_btn"
+        android:layout_width="311dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginBottom="108dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Sign In"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passreg"
+        tools:ignore="UnknownIdInLayout" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="39dp"
+        android:text="Not Registered Yet? Sign Up"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signin_btn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
